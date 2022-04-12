@@ -20,13 +20,50 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.3/web3.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/moralis@1.5.9/dist/moralis.js"></script>
+
+	<style>
+		#app {
+			margin-top: 30px;
+			height: 400px;
+			width: fit-content;
+			background-color: white;
+			border-radius: 30px;
+			padding: 20px;
+			justify-content: center;
+			width: 500px;
+			display: none;
+		}
+
+		body {
+			background-color: rgb(1, 1, 20);
+		}
+
+		.row {
+			justify-content: center;
+			margin: auto;
+		}
+
+		.form_element {
+			margin-top: 20px;
+		}
+
+		.title {
+			color: white;
+			font-size: 50pt;
+			margin: auto;
+			text-align: center;
+			margin-top: 30px;
+		}
+	</style>
+
 	<title>Neco Lazy Minter</title>
 </head>
 
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 offset-md-3">
+			<div class="title">Neco Lazy Minter</div>
+			<div id="app" class="col-md-6">
 				<div class="form_element">
 					<input class="form-control" type="text" id="input_name" name="name" placeholder="NFT Name">
 				</div>
@@ -39,16 +76,11 @@
 						name="image">
 				</div>
 				<div class="form_element">
-					<button class="btn btn-promary btn-large- btn-block" id="submit">Submit</button>
+					<button class="btn btn-primary btn-large btn-block" id="submit">Submit</button>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-
-
-
 	<script type="text/javascript" src="./main.js"></script>
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
