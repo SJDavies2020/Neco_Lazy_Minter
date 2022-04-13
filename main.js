@@ -67,14 +67,11 @@ async function submit() {
 		document.querySelector("#input_description").value="";
 		document.querySelector("#input_image").value="";
 	}
-
 	console.log(res);
 	document.querySelector("#input_status").value="Status: Lazy Mint Complete!";
 	let token_address=res.data.result.token_address;
 	let token_id=res.data.result.tokenId;
 	let url=`https://rinkby.rarible.com/token/${token_address}:${token_id}`;
 	document.querySelector("#link").innerHTML=`Link: <a target="_blank" href="${url}"> View NFT</a>`;
-
 }
-
 login();
